@@ -26,7 +26,7 @@
 </template>
 
 <script lang="coffee">
-import UnicodeImage from "./UnicodeImage.vue"
+import UnicodeImage from "@/components/UnicodeImage.vue"
 
 export default
   components:

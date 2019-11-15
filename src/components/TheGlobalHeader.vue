@@ -1,12 +1,11 @@
 <template lang="pug">
 header.the-global-header
-  h1.title Unicode Symbols
+  router-link.title(tag="h1", to="/", exact) Unicode Symbols
 
   nav.nav
     ul.list
-      li.item Unicode Symbol List
-      li.item Samples
-      li.item Licence and Thanks
+      router-link.item(tag="li", to="/sample") Samples
+      router-link.item(tag="li", to="/license") License
 </template>
 
 <script lang="coffee">
@@ -32,6 +31,10 @@ $global-ft-color-night: #fafafd;
     padding-bottom: var(--space-size-s);
     padding-right:  var(--space-size-l);
     font-size: var(--ft-size-l);
+    cursor: pointer;
+
+    &::before { content: "〖" }
+    &::after  { content: "〗" }
   }
 
   > .nav {

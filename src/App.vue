@@ -2,17 +2,16 @@
 #app
   the-global-header.header
 
-  unicode-list.main
+  keep-alive
+    router-view.main
 </template>
 
 <script lang="coffee">
 import TheGlobalHeader from "./components/TheGlobalHeader.vue"
-import UnicodeList     from "./components/UnicodeList.vue"
 
 export default
   components:
     "the-global-header": TheGlobalHeader
-    "unicode-list": UnicodeList
 </script>
 
 <style lang="scss">
