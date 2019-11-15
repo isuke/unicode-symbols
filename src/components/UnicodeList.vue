@@ -39,20 +39,20 @@ export default
 $global-bg-color-day: #f0f0f0;
 $global-ft-color-day: #04041b;
 
-
 .unicode-list {
   > .table {
+    width: 100%;
+    height: 100%;
+
     will-change: transform;
 
     > .head {
-      background-color: darken($global-bg-color-day, 25%);
-
       > .row {
         > .head {
-          min-width: 2.5rem;
-          background-color: darken($global-bg-color-day, 25%);
           position: sticky;
-          top: 0;
+          background-color: darken($global-bg-color-day, 10%);
+          min-width: 2.5rem;
+          top: var(--global-header-height);
           padding: var(--space-size-m);
 
           z-index: calc(var(--base-z-index) + 1);
@@ -62,8 +62,8 @@ $global-ft-color-day: #04041b;
 
     > .body {
       > .row {
-        &:nth-child(odd)  { background-color: darken($global-bg-color-day, 5%); }
-        &:nth-child(even) { background-color: darken($global-bg-color-day, 15%); }
+        &:nth-child(odd)  { background-color:        $global-bg-color-day; }
+        &:nth-child(even) { background-color: darken($global-bg-color-day, 5%); }
 
         > .data {
           padding: var(--space-size-m);

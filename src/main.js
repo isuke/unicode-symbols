@@ -1,6 +1,7 @@
 //
 // styles
 //
+import 'destyle.css'
 import './styles/_variables.scss'
 import './styles/_body.scss'
 
