@@ -11,28 +11,39 @@
         th.head.htmlcode HTML Code
         th.head.csscode CSS Code
         th.head.block Block
+        th.head.set Set
         th.head.version Unicode Version
     tbody.body
       tr.row(v-for="code in codes")
         td.data.image: unicode-image.inner(:code="code")
         td.data.font.arial(v-html="`&#${code};`")
         td.data.font.roboto(v-html="`&#${code};`")
-        td.data.name TODO
+        td.data.name
+          p.main {{ unicodeInfo(code).name }}
+          p.sub(v-if="unicodeInfo(code).subNames.length > 0") {{ unicodeInfo(code).subNames.join(', ') }}
         td.data.code.unicode U+{{ code.toString(16) }}
-        td.data.code.htmlcode &amp;&#35;{{ code.toString(10) }};
+        td.data.code.htmlcode
+          p.code &amp;&#35;{{ code.toString(10) }};
+          p.entity(v-if="unicodeInfo(code).entity") {{ unicodeInfo(code).entity }}
         td.data.code.csscode \{{ code.toString(16) }}
-        td.data.block TODO
-        td.data.version TODO
+        td.data.block {{ unicodeInfo(code).block }}
+        td.data.set {{ unicodeInfo(code).set ? unicodeInfo(code).set.join(', ') : "" }}
+        td.data.version {{ unicodeInfo(code).version }}
 </template>
 
 <script lang="coffee">
 import UnicodeImage from "@/components/UnicodeImage.vue"
+
+import unicodeList from "@/unicode_list.json"
 
 export default
   components:
     "unicode-image": UnicodeImage
   data: ->
     codes: [8192..11903].concat([12288..12351], [12800..13055], [13056..13311], [19904..19967])
+    unicodeList: unicodeList
+  methods:
+    unicodeInfo: (code) -> @unicodeList[code.toString(10)]
 </script>
 
 <style lang="scss">
@@ -80,6 +91,14 @@ $global-ft-color-day: #04041b;
 
             &.arial  { font-family: 'Arial'; }
             &.roboto { font-family: 'Roboto'; }
+          }
+
+          &.name {
+            > .main { /* no-op */ }
+            > .sub {
+              font-size: var(--ft-size-s);
+              color: lighten($global-ft-color-day, 10%);
+            }
           }
 
           &.code {
