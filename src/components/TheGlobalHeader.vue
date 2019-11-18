@@ -5,6 +5,7 @@ header.the-global-header
   nav.nav
     ul.list
       router-link.item(tag="li", to="/sample") Samples
+      router-link.item(tag="li", to="/tool") Tools
       router-link.item(tag="li", to="/license") License
 </template>
 

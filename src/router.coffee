@@ -1,10 +1,6 @@
 import Vue from "vue"
 import Router from "vue-router"
 
-import UnicodeList from "./views/UnicodeList.vue"
-import SampleList  from "./views/SampleList.vue"
-import License     from "./views/License.vue"
-
 Vue.use Router
 
 export default new Router
@@ -21,6 +17,11 @@ export default new Router
       path: "/sample"
       name: "sample"
       component: => `import(/* webpackChunkName: "sample"*/ "./views/SampleList.vue")`
+    }
+    {
+      path: "/tool"
+      name: "tool"
+      component: => `import(/* webpackChunkName: "tool"*/ "./views/Tool.vue")`
     }
     {
       path: "/license"

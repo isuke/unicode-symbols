@@ -1,6 +1,6 @@
 <template lang="pug">
 .sample-list
-  h1.title Sample List
+  h1.title Samples
 
   h2.subtitle Decoration
   ul.titles
