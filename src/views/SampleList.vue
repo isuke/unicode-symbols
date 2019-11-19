@@ -7,21 +7,7 @@
   char-decoration-list.content
 
   h2.subtitle Spinner
-  ul.content.list
-    li.item: span ⤾
-    li.item: span ⤿
-    li.item: span ⟲
-    li.item: span ⟳
-    li.item: span ⵕ
-    li.item: span ⃙
-    li.item: span ⃚
-    li.item: span ⌔
-    li.item: span ⌕
-    li.item: span ⌮
-    li.item: span ⎋
-    li.item: span ☌
-    li.item: span ✇
-    li.item: span ⨕
+  spinner-list.content
 
   //- h2.subtitle Loading
   //- ul.content.list
@@ -115,6 +101,7 @@ import TitleDecorationList from "@/components/TitleDecorationList.vue"
 import LogoDecorationList  from "@/components/LogoDecorationList.vue"
 import TextDecorationList  from "@/components/TextDecorationList.vue"
 import CharDecorationList  from "@/components/CharDecorationList.vue"
+import SpinnerList         from "@/components/SpinnerList.vue"
 
 export default
   components:
@@ -122,6 +109,7 @@ export default
     "logo-decoration-list": LogoDecorationList
     "text-decoration-list": TextDecorationList
     "char-decoration-list": CharDecorationList
+    "spinner-list": SpinnerList
 </script>
 
 <style lang="scss" scoped>
