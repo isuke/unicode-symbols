@@ -1,199 +1,12 @@
 <template lang="pug">
 .sample-list
-  h1.title Samples
-
   h2.subtitle Decoration
-  ul.titles
-    li.title: h1 ❨ Title ❩
-    li.title: h1 ❪ Title ❫
-    li.title: h1 ❬ Title ❭
-    li.title: h1 ❮ Title ❯
-    li.title: h1 ❰ Title ❱
-    li.title: h1 ❲ Title ❳
-    li.title: h1 ❴ Title ❵
-    li.title: h1 ⟦ Title ⟧
-    li.title: h1 ⟨ Title ⟩
-    li.title: h1 ⟪ Title ⟫
-    li.title: h1 ⟬ Title ⟭
-    li.title: h1 ⟮ Title ⟯
-    li.title: h1 ⦃ Title ⦄
-    li.title: h1 ⦅ Title ⦆
-    li.title: h1 ⦇ Title ⦈
-    li.title: h1 ⦉ Title ⦊
-    li.title: h1 ⦋ Title ⦌
-    li.title: h1 ⦍ Title ⦐
-    li.title: h1 ⦏ Title ⦎
-    li.title: h1 ⦑ Title ⦒
-    li.title: h1 ⦓ Title ⦔
-    li.title: h1 ⦕ Title ⦖
-    li.title: h1 ⦗ Title ⦘
-    li.title: h1 ⦤ Title ⦥
-    li.title: h1 ⪡ Title ⪢
-    li.title: h1 ⪪ Title ⪫
-    li.title: h1 ⪻ Title ⪼
-    li.title: h1 ⪽ Title ⪾
-    li.title: h1 ⫏ Title ⫐
-    li.title: h1 ⫷ Title ⫸
-    li.title: h1 ⭅ Title ⭆
-    li.title: h1 ⴹ Title ⴺ
-    li.title: h1 ⁅ Title ⁆
-    li.title: h1 ⸦ Title ⸧
-    li.title: h1 ⸨ Title ⸩
-    li.title: h1 〈 Title 〉
-    li.title: h1 《 Title 》
-    li.title: h1 「 Title 」
-    li.title: h1 『 Title 』
-    li.title: h1 【 Title 】
-    li.title: h1 〔 Title 〕
-    li.title: h1 〖 Title 〗
-    li.title: h1 〘 Title 〙
-    li.title: h1 〚 Title 〛
-    li.title: h1 ⸐ Title ⸑
-    li.title: h1 ⸠ Title ⸡
-    li.title: h1 〈 Title 〉
-    li.title: h1 ⍃ Title ⍄
-    li.title: h1 ⍅ Title ⍆
-    li.title: h1 ⍈ Title ⍇
-    li.title: h1 ☛ Title ☚
-    li.title: h1 ☞ Title ☜
-  ul.titles
-    li.title
-      h1 ↱ Title ↰
-      h1 ↳ Title ↵
-    li.title
-      h1 ⸢ Title ⸣
-      h1 ⸤ Title ⸥
-    li.title
-      h1 ⬐ Title ⬎
-      h1 ⬑ Title ⬏
-    li.title
-      h1 ⌈ Title ⌉
-      h1 ⌊ Title ⌋
-    li.title
-      h1 ⌌ Title ⌍
-      h1 ⌎ Title ⌏
-    li.title
-      h1 ⌜ Title ⌝
-      h1 ⌞ Title ⌟
-    li.title
-      h1 ⎾ Title ⏋
-      h1 ⎿ Title ⏌
-    li.title
-      h1 ╔ Title ╗
-      h1 ╚ Title ╝
-    li.title
-      h1 ╭ Title ╮
-      h1 ╰ Title ╯
-    li.title
-      h1 ◜ Title ◝
-      h1 ◟ Title ◞
-  ul.chars
-    li.char
-      span ⟰
-      span A
-      span ⟱
-    li.char
-      span ⴷ
-      span A
-      span ⴸ
-    li.char
-      span ⏜
-      span A
-      span ⏝
-    li.char
-      span ⌢
-      span A
-      span ⌣
-    li.char
-      span ⏞
-      span A
-      span ⏟
-    li.char
-      span ⏠
-      span A
-      span ⏡
-    li.char
-      span ⍊
-      span A
-      span ⍑
-    li.char
-      span ⍋
-      span A
-      span ⍒
-    li.char
-      span ⍓
-      span A
-      span ⍌
-    li.char
-      span ⍎
-      span A
-      span ⍕
-    li.char
-      span ⍏
-      span A
-      span ⍖
-    li.char
-      span ⍐
-      span A
-      span ⍗
-    li.char
-      span ◠
-      span A
-      span ◡
-    li.char
-      span ⍲
-      span A
-      span ⍱
-    li.char
-      span ⎴
-      span A
-      span ⎶
-      span B
-      span ⎵
-  ul.quotes
-    li.quote
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      p.q <span>‘</span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span>’</span>
-      p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    li.quote
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      p.q <span>‚</span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span>‛</span>
-      p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    li.quote
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      p.q <span>“</span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span>”</span>
-      p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    li.quote
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      p.q <span>′</span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span>‵</span>
-      p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    li.quote
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      p.q <span>″</span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span>‶</span>
-      p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    li.quote
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      p.q <span>‴</span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span>‷</span>
-      p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    li.quote
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      p.q <span>⁗</span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span>⁗</span>
-      p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    li.quote
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      p.q <span>„</span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span>‟</span>
-      p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    li.quote
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      p.q <span>❛</span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span>❜</span>
-      p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    li.quote
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      p.q <span>❝</span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span>❞</span>
-      p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  title-decoration-list.content
+  logo-decoration-list.content
+  char-decoration-list.content
 
   h2.subtitle Spinner
-  ul.list
+  ul.content.list
     li.item: span ⤾
     li.item: span ⤿
     li.item: span ⟲
@@ -207,9 +20,10 @@
     li.item: span ⎋
     li.item: span ☌
     li.item: span ✇
+    li.item: span ⨕
 
   //- h2.subtitle Loading
-  //- ul.list
+  //- ul.content.list
   //-   li.item
 
   //- h2.subtitle Form
@@ -234,7 +48,7 @@
   //-       | TODO
 
   h2.subtitle Number
-  table.table
+  table.content.table
     thead.head
       tr.row
         <td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td>32</td><td>33</td><td>34</td><td>35</td><td>36</td><td>37</td><td>38</td><td>39</td><td>40</td><td>41</td><td>42</td><td>43</td><td>44</td><td>45</td><td>46</td><td>47</td><td>48</td><td>49</td><td>50</td><td>60</td><td>70</td><td>80</td>
@@ -279,7 +93,7 @@
         <td></td><td>㏠</td><td>㏡</td><td>㏢</td><td>㏣</td><td>㏤</td><td>㏥</td><td>㏦</td><td>㏧</td><td>㏨</td><td>㏩</td><td>㏪</td><td>㏫</td><td>㏬</td><td>㏭</td><td>㏮</td><td>㏯</td><td>㏰</td><td>㏱</td><td>㏲</td><td>㏳</td><td>㏴</td><td>㏵</td><td>㏶</td><td>㏷</td><td>㏸</td><td>㏹</td><td>㏺</td><td>㏻</td><td>㏼</td><td>㏽</td><td>㏾</td>
 
   h2.subtitle Alphabet
-  table.table
+  table.content.table
     thead.head
       tr.row
         <td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>I</td><td>J</td><td>K</td><td>L</td><td>M</td><td>N</td><td>O</td><td>P</td><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td><td>V</td><td>W</td><td>X</td><td>Y</td><td>Z</td>
@@ -296,7 +110,15 @@
 </template>
 
 <script lang="coffee">
-export default {}
+import TitleDecorationList from "@/components/TitleDecorationList.vue"
+import LogoDecorationList  from "@/components/LogoDecorationList.vue"
+import CharDecorationList  from "@/components/CharDecorationList.vue"
+
+export default
+  components:
+    "title-decoration-list": TitleDecorationList
+    "logo-decoration-list": LogoDecorationList
+    "char-decoration-list": CharDecorationList
 </script>
 
 <style lang="scss" scoped>
@@ -313,65 +135,8 @@ export default {}
     margin-bottom: var(--space-size-m);
   }
 
-  > .titles {
-    display: grid;
-    grid-auto-rows: max-content;
-    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
-    grid-auto-flow: row;
-    grid-gap: var(--space-size-l) var(--space-size-s);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
+  > .content {
     margin-bottom: var(--space-size-m);
-
-    > .title {
-      background-color: #f0f0f0;
-      padding: var(--space-size-s);
-      font-family: 'Roboto';
-      font-size: var(--ft-size-l);
-    }
-  }
-
-  > .chars {
-    display: grid;
-    grid-auto-rows: max-content;
-    grid-template-columns: repeat(auto-fill, minmax(2.5rem, 1fr));
-    grid-auto-flow: row;
-    grid-gap: var(--space-size-l) var(--space-size-s);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    margin-bottom: var(--space-size-m);
-
-    > .char {
-      display: flex;
-      flex-direction: column;
-
-      background-color: #f0f0f0;
-      padding: var(--space-size-s);
-      font-family: 'Roboto';
-      font-size: var(--ft-size-l);
-    }
-  }
-
-  > .quotes {
-    > .quote {
-      background-color: #f0f0f0;
-      padding: var(--space-size-s);
-
-      &:not(:last-child) { margin-bottom: var(--space-size-s); }
-
-      > .q {
-        background-color: darken(#f0f0f0, 5%);
-        padding: var(--space-size-s);
-
-        > span {
-          font-size: var(--ft-size-l);
-        }
-      }
-    }
   }
 }
 </style>
