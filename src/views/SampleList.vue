@@ -3,6 +3,7 @@
   h2.subtitle Decoration
   title-decoration-list.content
   logo-decoration-list.content
+  text-decoration-list.content
   char-decoration-list.content
 
   h2.subtitle Spinner
@@ -112,12 +113,14 @@
 <script lang="coffee">
 import TitleDecorationList from "@/components/TitleDecorationList.vue"
 import LogoDecorationList  from "@/components/LogoDecorationList.vue"
+import TextDecorationList  from "@/components/TextDecorationList.vue"
 import CharDecorationList  from "@/components/CharDecorationList.vue"
 
 export default
   components:
     "title-decoration-list": TitleDecorationList
     "logo-decoration-list": LogoDecorationList
+    "text-decoration-list": TextDecorationList
     "char-decoration-list": CharDecorationList
 </script>
 
