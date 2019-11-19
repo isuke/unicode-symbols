@@ -127,7 +127,7 @@ export default
   }
 
   > .content {
-    margin-bottom: var(--space-size-m);
+    margin-bottom: var(--space-size-s);
   }
 }
 </style>

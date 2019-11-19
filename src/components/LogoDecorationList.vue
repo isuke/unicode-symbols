@@ -60,16 +60,16 @@ ul.logo-decoration-list
     p.decoration
       span ⏋
       span ⏌
-  li.item
-    p.decoration
-      span ╔
-      span ╚
-    p.text
-      span Hello
-      span World
-    p.decoration
-      span ╗
-      span ╝
+  //- li.item
+  //-   p.decoration
+  //-     span ╔
+  //-     span ╚
+  //-   p.text
+  //-     span Hello
+  //-     span World
+  //-   p.decoration
+  //-     span ╗
+  //-     span ╝
   li.item
     p.decoration
       span ╭
@@ -120,6 +120,69 @@ ul.logo-decoration-list
     p.decoration
       span ⎫
       span ⎭
+  li.item.-big
+    p.decoration
+      span ╒
+      span ╞
+      span ╘
+    p.text
+      span it
+      span what
+      span it
+    p.decoration
+      span ╤
+      span ╪
+      span ╧
+    p.text
+      span is
+      span ══
+      span is
+    p.decoration
+      span ╕
+      span ╡
+      span ╛
+  li.item.-big
+    p.decoration
+      span ╓
+      span ╟
+      span ╙
+    p.text
+      span Peace
+      span with
+      span a
+    p.decoration
+      span ╥
+      span ╫
+      span ╨
+    p.text
+      span begins
+      span ───
+      span smile
+    p.decoration
+      span ╖
+      span ╢
+      span ╜
+  li.item.-big
+    p.decoration
+      span ╔
+      span ╠
+      span ╚
+    p.text
+      span Men
+      span believe
+      span they
+    p.decoration
+      span ╦
+      span ╬
+      span ╩
+    p.text
+      span willingly
+      span what
+      span wish
+    p.decoration
+      span ╗
+      span ╣
+      span ╝
 </template>
 
 <script lang="coffee">
@@ -138,6 +201,7 @@ export default {}
   text-align: center;
 
   > .item {
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -146,6 +210,10 @@ export default {}
     padding: var(--space-size-s);
     font-family: 'Roboto';
     font-size: var(--ft-size-l);
+
+    &.-big {
+      grid-column: span 2;
+    }
 
     > .decoration, > .text {
       display: flex;

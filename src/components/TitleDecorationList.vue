@@ -57,9 +57,6 @@ ul.title-decoration-list
   li.item 〚 Title 〛
   li.item ⸐ Title ⸑
   li.item ⸠ Title ⸡
-  li.item ╞ Title ╡
-  li.item ╠ Title ╣
-  li.item ╟ Title ╢
   li.item 〈 Title 〉
   li.item ⍃ Title ⍄
   li.item ⍅ Title ⍆
