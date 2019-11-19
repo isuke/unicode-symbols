@@ -14,6 +14,11 @@ export default new Router
       component: => `import(/* webpackChunkName: "list"*/ "./views/UnicodeList.vue")`
     }
     {
+      path: "/set"
+      name: "set"
+      component: => `import(/* webpackChunkName: "set"*/ "./views/SetList.vue")`
+    }
+    {
       path: "/sample"
       name: "sample"
       component: => `import(/* webpackChunkName: "sample"*/ "./views/SampleList.vue")`
