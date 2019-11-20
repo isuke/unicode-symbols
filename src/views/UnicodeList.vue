@@ -14,7 +14,7 @@
         th.head.set Set
         th.head.version Unicode Version
     tbody.body
-      tr.row(v-for="code in codes")
+      tr.row(v-for="code in codes", :key="code")
         td.data.image: unicode-image.inner(:code="code")
         td.data.font.arial(v-html="`&#${code};`")
         td.data.font.roboto(v-html="`&#${code};`")
