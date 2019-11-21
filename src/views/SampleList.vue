@@ -9,9 +9,8 @@
   h2.subtitle Spinner
   spinner-list.content
 
-  //- h2.subtitle Loading
-  //- ul.content.list
-  //-   li.item
+  h2.subtitle Animation
+  animation-list.content
 
   //- h2.subtitle Form
   //- ul.list
@@ -41,6 +40,7 @@ import LogoDecorationList  from "@/components/LogoDecorationList.vue"
 import TextDecorationList  from "@/components/TextDecorationList.vue"
 import CharDecorationList  from "@/components/CharDecorationList.vue"
 import SpinnerList         from "@/components/SpinnerList.vue"
+import AnimationList       from "@/components/AnimationList.vue"
 
 export default
   components:
@@ -49,10 +49,12 @@ export default
     "text-decoration-list": TextDecorationList
     "char-decoration-list": CharDecorationList
     "spinner-list": SpinnerList
+    "animation-list": AnimationList
 </script>
 
 <style lang="scss" scoped>
 .sample-list {
+  margin-bottom: var(--space-size-xxl);
   padding: var(--space-size-s);
 
   > .title {
