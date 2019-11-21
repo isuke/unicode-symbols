@@ -37,6 +37,8 @@ export default
   > .main {
     grid-row: 2;
     grid-column: 1;
+    // max-width: 100vw;
+    // overflow-x: scroll;
   }
 }
 </style>
