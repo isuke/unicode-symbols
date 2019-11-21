@@ -14,6 +14,7 @@ export default
     animations: [
       { wide: false, strs: ["", "▏", "▎", "▍", "▌", "▋", "▊", "▉"] }
       { wide: false, strs: ["", "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"] }
+      { wide: false, strs: ["▝", "▗", "▖", "▘"] }
       { wide: false, strs: ["╀", "┾", "╁", "┽"] }
       { wide: false, strs: ["▸▹▹▹", "▹▸▹▹", "▹▹▸▹", "▹▹▹▸"] }
       { wide: false, strs: ["☰", "☱", "☲", "☴"] }
