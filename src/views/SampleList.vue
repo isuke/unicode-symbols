@@ -12,7 +12,9 @@
   h2.subtitle Animation
   animation-list.content
 
-  //- h2.subtitle Form
+  h2.subtitle Form
+  form-list.content
+
   //- ul.list
   //-   li.item
   //-     .hoge
@@ -41,6 +43,7 @@ import TextDecorationList  from "@/components/TextDecorationList.vue"
 import CharDecorationList  from "@/components/CharDecorationList.vue"
 import SpinnerList         from "@/components/SpinnerList.vue"
 import AnimationList       from "@/components/AnimationList.vue"
+import FormList            from "@/components/FormList.vue"
 
 export default
   components:
@@ -50,6 +53,7 @@ export default
     "char-decoration-list": CharDecorationList
     "spinner-list": SpinnerList
     "animation-list": AnimationList
+    "form-list": FormList
 </script>
 
 <style lang="scss" scoped>
