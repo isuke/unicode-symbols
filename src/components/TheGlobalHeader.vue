@@ -9,6 +9,7 @@ header.the-global-header
         router-link.item(tag="li", to="/sample") Samples
         router-link.item(tag="li", to="/tool") Tools
         router-link.item(tag="li", to="/license") License
+        li.item: a.link(href="https://github.com/isuke/unicode-symbols", target="_blank", rel="noopener noreferrer") GitHub
 </template>
 
 <script lang="coffee">
@@ -67,6 +68,14 @@ $global-ft-color-night: #fafafd;
           font-size: var(--ft-size-m);
 
           cursor: pointer;
+
+          > .link {
+            width: 100%;
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+          }
         }
       }
     }

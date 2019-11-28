@@ -6,3 +6,12 @@ body {
   background-color: var(--global-bg-color-day);
   color: var(--global-ft-color-day);
 }
+
+/* TODO: move */
+a[target="_blank"] {
+  &::after {
+    content: "⭎"; // ⬀⬏
+    margin-left: 0.2em;
+    font-size: 1.2em;
+  }
+}
