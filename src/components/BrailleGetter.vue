@@ -318,7 +318,7 @@ export default
     // height: calc(100% + 1.2rem);
     margin-top: -1.2rem;
     font-size: 4.7rem;
-    font-family: 'Roboto';
+    font-family: var(--unicode-font-family);
     overflow: hidden;
     margin-right: var(--space-size-m);
   }

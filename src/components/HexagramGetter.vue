@@ -120,7 +120,7 @@ export default
     // height: calc(100% + 0.6rem);
     margin-top: -0.6rem;
     font-size: 7.6rem;
-    font-family: 'Roboto';
+    font-family: var(--unicode-font-family);
     overflow: hidden;
     margin-right: var(--space-size-m);
   }

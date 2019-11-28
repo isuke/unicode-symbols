@@ -75,7 +75,7 @@ export default {}
     }
 
     > .decoration {
-      font-family: 'Roboto';
+      font-family: var(--unicode-font-family);
       font-size: var(--ft-size-l);
     }
 

@@ -160,7 +160,7 @@ export default {}
 
     background-color: #f0f0f0;
     padding: var(--space-size-s);
-    font-family: 'Roboto';
+    font-family: var(--unicode-font-family);
     font-size: var(--ft-size-l);
 
     &.-high { grid-row: span 2; }

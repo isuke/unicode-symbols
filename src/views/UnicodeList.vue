@@ -90,7 +90,7 @@ $global-ft-color-day: #04041b;
             font-size: var(--ft-size-xl);
 
             &.arial  { font-family: 'Arial'; }
-            &.roboto { font-family: 'Roboto'; }
+            &.roboto { font-family: 'Roboto-Regular'; }
           }
 
           &.name {

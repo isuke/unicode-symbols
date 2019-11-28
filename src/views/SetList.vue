@@ -83,7 +83,7 @@ $global-ft-color-day: #04041b;
 
         > .data {
           &.font {
-            font-family: 'Roboto';
+            font-family: var(--unicode-font-family);
           }
         }
       }

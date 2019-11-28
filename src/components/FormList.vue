@@ -75,7 +75,7 @@ export default {}
     justify-content: center;
     background-color: #f0f0f0;
     padding: var(--space-size-s);
-    font-family: 'Roboto';
+    font-family: var(--unicode-font-family);
     font-size: var(--ft-size-l);
     white-space: nowrap;
 
@@ -85,7 +85,7 @@ export default {}
     }
     > .label {
       &:before {
-        font-family: 'roboto';
+        font-family: var(--unicode-font-family);
         font-size: var(--ft-size-xl);
       }
     }
