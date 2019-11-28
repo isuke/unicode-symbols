@@ -10,18 +10,23 @@
 
   h2.subtitle Hexagram Getter
   hexagram-getter.content
+
+  h2.subtitle Alphabet Converter
+  alphabet-converter.content
 </template>
 
 <script lang="coffee">
-import BrailleGetter  from "@/components/BrailleGetter.vue"
-import TrigramGetter  from "@/components/TrigramGetter.vue"
-import HexagramGetter from "@/components/HexagramGetter.vue"
+import BrailleGetter     from "@/components/BrailleGetter.vue"
+import TrigramGetter     from "@/components/TrigramGetter.vue"
+import HexagramGetter    from "@/components/HexagramGetter.vue"
+import AlphabetConverter from "@/components/AlphabetConverter.vue"
 
 export default
   components:
     "braille-getter": BrailleGetter
     "trigram-getter": TrigramGetter
     "hexagram-getter": HexagramGetter
+    "alphabet-converter": AlphabetConverter
 </script>
 
 <style lang="scss" scoped>
