@@ -3,13 +3,13 @@
   h1.title Tools
 
   h2.subtitle Braille Getter
-  braille-getter.tool
+  braille-getter.content
 
   h2.subtitle Trigram Getter
-  trigram-getter.tool
+  trigram-getter.content
 
   h2.subtitle Hexagram Getter
-  hexagram-getter.tool
+  hexagram-getter.content
 </template>
 
 <script lang="coffee">
@@ -27,6 +27,7 @@ export default
 <style lang="scss" scoped>
 .tool {
   padding: var(--space-size-s);
+  margin-bottom: var(--space-size-xxl);
 
   > .title {
     font-size: var(--ft-size-l);
@@ -38,7 +39,7 @@ export default
     margin-bottom: var(--space-size-m);
   }
 
-  > .tool {
+  > .content {
     margin-bottom: var(--space-size-l);
   }
 }

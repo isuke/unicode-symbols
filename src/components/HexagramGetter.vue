@@ -1,14 +1,20 @@
 <template lang="pug">
 .hexagram-getter
-    form.form
-      input.checkbox(type="checkbox", v-model="bit6")
-      input.checkbox(type="checkbox", v-model="bit5")
-      input.checkbox(type="checkbox", v-model="bit4")
-      input.checkbox(type="checkbox", v-model="bit3")
-      input.checkbox(type="checkbox", v-model="bit2")
-      input.checkbox(type="checkbox", v-model="bit1")
-    .char {{ hexagram.char }}
-    .code U+{{ hexagram.code.toString(16) }}
+  form.form
+    input.input(:id="`${_uid}-bit6`", type="checkbox", v-model="bit6")
+    label.label(:for="`${_uid}-bit6`")
+    input.input(:id="`${_uid}-bit5`", type="checkbox", v-model="bit5")
+    label.label(:for="`${_uid}-bit5`")
+    input.input(:id="`${_uid}-bit4`", type="checkbox", v-model="bit4")
+    label.label(:for="`${_uid}-bit4`")
+    input.input(:id="`${_uid}-bit3`", type="checkbox", v-model="bit3")
+    label.label(:for="`${_uid}-bit3`")
+    input.input(:id="`${_uid}-bit2`", type="checkbox", v-model="bit2")
+    label.label(:for="`${_uid}-bit2`")
+    input.input(:id="`${_uid}-bit1`", type="checkbox", v-model="bit1")
+    label.label(:for="`${_uid}-bit1`")
+  .char {{ hexagram.char }}
+  .code U+{{ hexagram.code.toString(16) }}
 </template>
 
 <script lang="coffee">
@@ -110,17 +116,32 @@ export default
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-columns: min-content;
     grid-auto-flow: column;
-    grid-gap: calc(var(--space-size-s) / 2);
+    grid-gap: 1px;
+    align-items: center;
+    justify-content: center;
     margin-right: var(--space-size-m);
+
+    > .input {
+      display: none;
+      &:not(:checked) + .label:before { content: '☐'; }
+      &:checked       + .label:before { content: '☑'; }
+    }
+    > .label {
+      &:before {
+        font-family: 'Roboto-Regular';
+        font-size: var(--ft-size-l);
+      }
+    }
   }
   > .char {
     display: flex;
     align-items: center;
     justify-content: center;
-    // height: calc(100% + 0.6rem);
-    margin-top: -0.6rem;
-    font-size: 7.6rem;
-    font-family: var(--unicode-font-family);
+    // height: calc(100% + 0.8rem);
+    height: 100%;
+    margin-top: -0.8rem;
+    font-size: 12rem;
+    font-family: 'Roboto-Regular';
     overflow: hidden;
     margin-right: var(--space-size-m);
   }
